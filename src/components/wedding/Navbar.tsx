@@ -1,9 +1,13 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useState } from "react";
 
 const Navbar = () => {
   const { scrollY } = useScroll();
-  const bgOpacity = useTransform(scrollY, [0, 100], [0, 0.9]);
-  const borderOpacity = useTransform(scrollY, [0, 100], [0, 0.15]);
+  const [scrolled, setScrolled] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 60);
+  });
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -16,12 +20,10 @@ const Navbar = () => {
       transition={{ delay: 3, duration: 0.8 }}
       className="fixed top-0 left-0 right-0 z-50"
     >
-      <motion.div
-        style={{
-          backgroundColor: `hsla(40, 33%, 97%, ${bgOpacity.get()})`,
-          borderBottomColor: `hsla(40, 60%, 50%, ${borderOpacity.get()})`,
-        }}
-        className="backdrop-blur-md border-b transition-all duration-300"
+      <div
+        className={`backdrop-blur-md border-b transition-all duration-500 ${
+          scrolled ? "bg-background/90 border-gold/15" : "bg-transparent border-transparent"
+        }`}
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <motion.button
@@ -48,7 +50,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
     </motion.nav>
   );
 };
