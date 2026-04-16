@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
 
           <h3 className="font-serif text-2xl md:text-3xl font-light text-foreground mb-2">
-            The Sharma & Kapoor Families
+            The Vellakat & Aanthoorayil Families
           </h3>
 
           <p className="font-sans text-sm text-warm-gray mt-6 leading-relaxed">
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div className="mt-16 pt-8 border-t border-border/30">
             <p className="font-sans text-xs text-warm-gray/60 tracking-wider">
-              Arjun & Meera · December 14, 2025
+              Ansar & Adeeba · August 20, 2025
             </p>
           </div>
         </motion.div>
