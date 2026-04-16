@@ -99,15 +99,15 @@ const DetailsSection = () => {
           <DetailCard
             title="The Ceremony"
             time="11:00 AM — 1:00 PM"
-            venue="The Grand Mahal"
-            address="42 Heritage Lane, Jaipur, Rajasthan"
+            venue="Al Ameen Auditorium"
+            address="Ponnani, Malappuram, Kerala"
             delay={0.2}
           />
           <DetailCard
             title="The Reception"
             time="7:00 PM — 11:00 PM"
-            venue="The Grand Mahal"
-            address="Crystal Ballroom, 42 Heritage Lane"
+            venue="Al Ameen Auditorium"
+            address="Ponnani, Malappuram, Kerala"
             delay={0.35}
           />
         </div>

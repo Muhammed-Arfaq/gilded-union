@@ -114,7 +114,7 @@ const HeroSection = () => {
         {/* Names */}
         <div className="overflow-hidden mb-2">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-foreground tracking-wide">
-            <AnimatedText text="Arjun" />
+            <AnimatedText text="Ansar" />
           </h1>
         </div>
 
@@ -131,7 +131,7 @@ const HeroSection = () => {
 
         <div className="overflow-hidden mb-8">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-foreground tracking-wide">
-            <AnimatedText text="Meera" />
+            <AnimatedText text="Adeeba" />
           </h1>
         </div>
 
@@ -145,7 +145,7 @@ const HeroSection = () => {
             Request the pleasure of your company
           </p>
           <p className="font-serif text-xl md:text-2xl text-foreground mt-4 font-light tracking-wider">
-            December 14, 2025
+            August 20, 2025
           </p>
         </motion.div>
 
